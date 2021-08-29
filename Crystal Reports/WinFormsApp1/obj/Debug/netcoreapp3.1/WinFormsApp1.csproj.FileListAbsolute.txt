@@ -1,0 +1,6 @@
+Z:\repos\Crystal Reports\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.csproj.AssemblyReference.cache
+Z:\repos\Crystal Reports\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.Form1.resources
+Z:\repos\Crystal Reports\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.csproj.GenerateResource.cache
+Z:\repos\Crystal Reports\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.AssemblyInfoInputs.cache
+Z:\repos\Crystal Reports\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.AssemblyInfo.cs
+Z:\repos\Crystal Reports\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.csproj.CoreCompileInputs.cache
