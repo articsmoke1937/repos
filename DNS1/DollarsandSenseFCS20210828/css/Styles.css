@@ -1,4 +1,6 @@
-﻿body {
+﻿@import 'css/index.css';
+
+body {
     margin-top: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: auto;
