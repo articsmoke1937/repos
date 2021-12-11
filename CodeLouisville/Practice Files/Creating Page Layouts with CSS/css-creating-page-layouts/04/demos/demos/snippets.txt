@@ -1,0 +1,20 @@
+***** CSS FILE LINK *****
+<link href="css/small.css" rel="stylesheet">
+
+
+***** LINK TO NORMALIZE *****
+https://necolas.github.io/normalize.css/
+
+
+
+***** MEDIA QUERY *****
+@media only screen and (min-width: 000px) {}
+
+
+
+***** TEXT SIZE ADJUST *****
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+
+***** BOX MODEL *****
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }

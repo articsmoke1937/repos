@@ -1,0 +1,23 @@
+***** PAGE TITLE *****
+main h1 {
+    color: #9b87b8;
+    font-style: italic;
+    margin: .5rem 0 .1rem 0;
+    font-size: 2rem;
+}
+
+***** SPECIALS STYLING *****
+.labeled h6, .labeled p {
+    background-color: red;
+    margin: 0;
+    width: 100%;
+    padding: .3rem 1rem;   
+}
+.labeled h6 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+.labeled p {
+    font-weight: 700;
+    color: #b00;
+}
