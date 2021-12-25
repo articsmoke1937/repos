@@ -14,8 +14,6 @@ contacts = {
 
 print('Student emails:')
 
-f
-o
-r student in contacts['students']:
+for student in contacts['students']:
 
     print(student['email'])# print(p['name'])

@@ -1,6 +1,6 @@
 acronymns = ['LOL', 'IDK', 'FYI']
 acronymns.append('BFD')
-if word in acronymns:
+if x in acronymns:
         print("Hello ya silly bastard")
 
 print (acronymns)
