@@ -1,5 +1,6 @@
 
 import University.globals as globals
+import University.globals as globals
 import json
 import yfinance as yf
 import Programs.plots as plots
@@ -15,11 +16,11 @@ def host_start(userrecognized):
         print(globals.border)
     elif userrecognized==False:
         print(globals.border)
-        print(f"\nMy Name is {globals.cname}")    
+        print(f"\nMy Name is {globals.cname}")
         print("\nLet's play a game! ")
-        print(globals.border) 
+        print(globals.border)
     else:
-        print('You have not been authenticated') 
+        print('You have not been authenticated')
 
 #============================================
 #Stock Program Options
@@ -157,7 +158,7 @@ def compare_exit(stocks,comp):
     elif compare == '2':
         del stocks[0]
         comp = 2
-        
+
     elif compare == '3':
         del stocks[0]
         stocks = []

@@ -48,34 +48,36 @@ user_id,pname,lname,city,age=up.get_user_info(globals.users_file,user_id)
 activity_choice.host_start(userrecognized)
 
 #Get user choice for activity
-while (choice != 5):
+#while (choice != 5):
+while True:
     choice=activity_choice.activity_start(globals.program_jsons)
 
     #Play Chuck Norris Jokes
     if choice==1:
         Programs.chucknorris.chucknorris_jokes(pname)
-    
-    #Review weather in different cities        
+
+    #Review weather in different cities
     elif choice==2:
         Programs.weather.weather(city)
 
-     #Review Stock data  
+     #Review Stock data
     elif choice==3:
         Programs.stocks.stocks_choice(pname)
-     
-     #Play Rocks Papers Scissors  
+
+     #Play Rocks Papers Scissors
     elif choice==4:
         rocks_paper_scissors.rocks_paper_scis(globals.cname, pname, choice)
-     
-     #Exit program 
+
+    #  #Exit program
     elif choice==5:
-        answer='exit'
-     
+         break
+       # answer='exit'
+
      #Enter Secret admin window
     elif choice==99:
        admin.admin_menu(user_id,pname,lname,city,age)
 
-    else:
-        print(pname, "didn't do it right")
-        Programs.weather.weather(city)
-        
+    # else:
+    #     print(pname, "didn't do it right")
+    #     Programs.weather.weather(city)
+
