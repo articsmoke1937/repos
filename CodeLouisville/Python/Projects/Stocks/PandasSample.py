@@ -14,7 +14,7 @@ start_date = '1990-01-01'
 end_date = '2021-07-12'
 
 # Define the ticker list
-tickers_list = ['AAPL', 'IBM', 'MSFT', 'WMT']
+tickers_list = ['POTX', 'ASX']
 
 # Create placeholder for data
 data = pd.DataFrame(columns=tickers_list)
@@ -23,7 +23,7 @@ data = pd.DataFrame(columns=tickers_list)
 for ticker in tickers_list:
     data[ticker] = yf.download(ticker, 
                                start_date,
-                               end_date)['Adj Close']
+                               end_date)['Open']
     
 # Print first 5 rows of the data
 data.head()

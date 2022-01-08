@@ -1,0 +1,82 @@
+import json
+from University.user_profile import user as up
+import University.globals as g
+import tkinter as ttk
+import tkinter.messagebox
+from tkinter import *
+import University.globals as globals
+
+class start_program:
+    # def __init__(self, master):
+    #     self.master = master
+    #     master.title("A simple GUI")
+
+    #     self.label = Label(master, text="This is our first GUI!")
+    #     self.label.pack()
+
+    #     self.greet_button = Button(master, text="Greet", command=self.greet)
+    #     self.greet_button.pack()
+
+    #     self.close_button = Button(master, text="Close", command=master.quit)
+    #     self.close_button.pack()
+
+    # def greet(self):
+    #     print("Greetings!")
+    checkin='start'
+
+def yes_press():#function of the button
+    userconfirm=1
+    print(userconfirm)
+    # uval_win.destor
+    return(userconfirm)
+
+def no_press():#function of the button
+    userconfirm=2
+    print(userconfirm)
+    # uval_win.destor
+    return(userconfirm)
+
+def can_press():#function of the button
+    userconfirm=5
+    print(userconfirm)
+    # uval_win.destor
+    return(userconfirm)
+
+def user_val_win(pname):
+    uval_win=Tk()
+    uval_win.title("User Validation")
+    content=ttk.Frame(column=0,row=0)
+    mainframe = ttk.Frame(content,column=0,row=0, padding="3 3 12 12")
+
+    content.columnconfigure(0, weight=1)  
+    content.rowconfigure(0, weight=1)
+    border_label=Label(mainframe, text= globals.border) 
+    name_label=Label(mainframe, text=f'Are you {pname}?') 
+    border_label=Label(mainframe, text= globals.border) 
+
+    yes_btn=Button(mainframe,text="Yes",command=yes_press)
+  
+    no_btn=Button(mainframe,text="No",command=no_press)
+    
+    can_btn=Button(mainframe,text="Cancel",command=uval_win.destroy)
+    
+    
+    #grid Layout
+    mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
+    # yes_btn.pack(side=LEFT)
+    # no_btn.pack(side=LEFT)
+    # can_btn.pack(side=LEFT)
+    # border_label.pack(side=TOP)
+    # name_label.pack(side=BOTTOM)
+    border_label.grid(column=0, row=0, columnspan=3)
+    name_label.grid(column=1, row=1, columnspan=1)
+    yes_btn.grid(column=0, row=3,columnspan=1)
+    no_btn.grid(column=1, row=3,columnspan=1)
+    can_btn.grid(column=2, row=3,columnspan=1)
+
+    userconfirm=yes_press()
+    uval_win.mainloop()
+    return(userconfirm)
+root = Tk()
+my_gui = MyFirstGUI(root)
+root.mainloop()
